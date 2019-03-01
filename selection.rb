@@ -2,20 +2,16 @@
 # and print the state of the array after “x” iterations have been performed
 
 def selection_sort(a)
-  n = a.length-1
-  it = 0
-  for i in 0...n
-    min_index=i
-    for j in (i+1)..n
-      if a[j]<a[min_index]
-        min_index=j
-      end
-    temp = a[i]
-    a[i]=a[min_index]
+  n, it = a.length-1,0 #it starts in 0 iterations
+  for i in 0...n # i will go trough 0 to n
+    min_index=i #min_index assumed as i
+    for j in (i+1)..n #j starts in i+1
+      min_index=j if a[j]<a[min_index] #fancy way to replace if end
+    temp,a[i] = a[i],a[min_index]
     a[min_index]=temp
-    it+=1
+    it+=1 #We increase +1 at the end of iteration in j
     end
-  it+=1
+  it+=1 #We increase +1 at the end of iteration in i
   end
   return it
 end
