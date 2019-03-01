@@ -22,7 +22,7 @@ def selection_sort(a,steps)
 end
 
 #Test
-print selection_sort([3,2,1],0)
+print selection_sort([3,2,1],0) #If user use 0 steps - array unsorted
 print selection_sort([3,2,1],1)
 print selection_sort([3,2,1],2)
 print selection_sort([3,2,1],3)
