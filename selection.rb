@@ -21,10 +21,10 @@ def selection_sort(a,steps)
   return it
 end
 
+#Test
 print selection_sort([3,2,1],0)
 print selection_sort([3,2,1],1)
 print selection_sort([3,2,1],2)
 print selection_sort([3,2,1],3)
-print (selection_sort([3,2,1],4))
 
 
